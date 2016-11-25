@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet_DDCSPP" company="CodeACadémie" webLink="http://" view-date="2016-11-12" view-index="0" gantt-divider-location="429" resource-divider-location="300" version="2.8.1" locale="en_US">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="215" order="0"/>
+        <field id="tpd4" name="Begin date" width="98" order="1"/>
+        <field id="tpd5" name="End date" width="97" order="2"/>
+        <option id="color.recent"><![CDATA[#99ff99 #9999ff #e14a2a #557c53 #00f4e5 #33ff33]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Cahier des charges" color="#99ff99" meeting="false" start="2016-11-14" duration="8" complete="0" expand="true"/>
+        <task id="64" name="Redaction specs fonctionelles" color="#99ff99" meeting="false" start="2016-11-24" duration="2" complete="0" expand="true"/>
+        <task id="65" name="Redaction specs techniques" color="#99ff99" meeting="false" start="2016-11-24" duration="2" complete="0" expand="true"/>
+        <task id="4" name="Wireframe" color="#e14a2a" meeting="false" start="2016-11-24" duration="1" complete="0" expand="true"/>
+        <task id="1" name="UML" color="#9999ff" meeting="false" start="2016-11-24" duration="2" complete="0" expand="true">
+            <task id="40" name="creation Bases de données" meeting="false" start="2016-11-24" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="7" name="BPML" color="#9999ff" meeting="false" start="2016-11-28" duration="1" complete="0" expand="true"/>
+        <task id="48" name="CRUD" color="#9999ff" meeting="false" start="2016-11-29" duration="14" complete="0" expand="true">
+            <task id="49" name="Créer un post" meeting="false" start="2016-11-29" duration="2" complete="0" expand="true"/>
+            <task id="50" name="Editer un post" meeting="false" start="2016-12-01" duration="2" complete="0" expand="true"/>
+            <task id="51" name="Supprimer un post" meeting="false" start="2016-12-05" duration="2" complete="0" expand="true"/>
+            <task id="52" name="Créer Utilisateur" color="#8cb6ce" meeting="false" start="2016-12-07" duration="2" complete="0" expand="true"/>
+            <task id="53" name="Supprimer utilisateur" color="#8cb6ce" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
+            <task id="54" name="Editer un utilisateur" meeting="false" start="2016-12-12" duration="2" complete="0" expand="true"/>
+            <task id="55" name="Gestion des roles utilisateur" meeting="false" start="2016-12-14" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="10" name="Maquette" color="#e14a2a" meeting="false" start="2016-11-28" duration="1" complete="0" expand="true"/>
+        <task id="13" name="Integration html" color="#e14a2a" meeting="false" start="2016-11-29" duration="2" complete="0" expand="true">
+            <task id="59" name="Gestion responsive" color="#e14a2a" meeting="false" start="2016-11-29" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="15" name="integration Css" color="#e14a2a" meeting="false" start="2016-12-01" duration="3" complete="0" expand="true">
+            <task id="41" name="fonction tailles de bloc" color="#e14a2a" meeting="false" start="2016-12-01" duration="2" complete="0" expand="true"/>
+            <task id="44" name="formulaire d'inscription" color="#e14a2a" meeting="false" start="2016-12-01" duration="1" complete="0" expand="true"/>
+            <task id="62" name="Changement style" color="#e14a2a" meeting="false" start="2016-12-05" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="16" name="Integration JavaScript" color="#e14a2a" meeting="false" start="2016-12-06" duration="4" complete="0" expand="true">
+            <task id="45" name="fonctionnalité filtre" color="#e14a2a" meeting="false" start="2016-12-06" duration="2" complete="0" expand="true"/>
+            <task id="60" name="Icone de chargement" color="#e14a2a" meeting="false" start="2016-12-08" duration="1" complete="0" expand="true"/>
+            <task id="61" name="Positionnement dynamique des blocs" color="#e14a2a" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="37" name="Gestion du permalien" color="#e14a2a" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
+        <task id="12" name="Test Behat/php Unit" meeting="false" start="2016-12-22" duration="2" complete="0" expand="true"/>
+        <task id="56" name="Connection/deconnexion" color="#9999ff" meeting="false" start="2016-12-19" duration="3" complete="0" expand="true">
+            <task id="57" name="fonction deconnexion" meeting="false" start="2016-12-21" duration="1" complete="0" expand="true"/>
+            <task id="58" name="fonction connection" meeting="false" start="2016-12-19" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="63" name="Mise en production" color="#99ff99" meeting="false" start="2016-12-23" duration="7" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

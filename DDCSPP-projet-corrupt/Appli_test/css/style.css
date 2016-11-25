@@ -1,0 +1,281 @@
+/**
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗
+ *  ██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝
+ *  ██║     ██║   ██║██████╔╝█████╗  ███████╗
+ *  ██║     ██║   ██║██╔══██╗██╔══╝  ╚════██║
+ *  ╚██████╗╚██████╔╝██████╔╝███████╗███████║
+ *   ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Roboto:100);
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: #fff; /* #343436 */
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗  ██████╗██╗   ██╗██████╗ ███████╗███████╗
+ */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+}
+
+h1 {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  background: #434343;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-color: #343436;
+}
+
+nav li:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  transform: rotate(45deg);
+  background: #0EBEFF; /*#252525*/
+}
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+nav li a:before {
+  content: " ";
+  position: absolute;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  transform: rotate(45deg);
+  background: #434343; /*#0EBEFF*/
+  z-index: -3;
+}
+
+nav li a:hover {
+    background-color: #1E1E1E;
+    opacity: 0.5;
+}
+
+
+/*
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗  ██████╗██╗   ██╗██████╗ ███████╗███████╗
+ */
+
+.container {
+    position: relative;
+    top: 10vh;
+    margin: 0 auto;
+    width: auto;
+}
+
+/*
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗  
+ */
+.blocCube {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 1px;
+    width: 198.5px;
+    height: 198.5px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+/* //////////////////////// 
+/* Anim hover */
+.blocCube:hover {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.cube {
+    width: 198.5px;
+    height: 198.5px;
+    margin: 5px;
+    background-color: #0EBEFF;
+/* perspective
+border-top: 20px solid  #343436;
+border-right: 20px solid #f6f6f6;
+border-bottom: 20px solid #f6f6f6; */
+}
+
+/* ////////////////////////
+/*Anim bloc au chargement */
+@keyframes blocAnim {
+  0% {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+  30% {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+.blocCube {
+   animation: blocAnim 2s;
+}
+
+.alt {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #343436;
+    opacity: 0.5;
+}
+
+/*
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗  
+ */
+.blocRect {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 1px;
+    width: 198.5px;
+    height: 400px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+/* ////////////////////////
+/* Anim hover */
+.blocRect:hover {
+    width: 400px;
+    height: 800px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.cube1 {
+    width: 198.5px;
+    height: 400px;
+    margin: 10px;
+    background-color: #0EBEFF;
+}
+
+/* ////////////////////////
+/* Anim hover */
+.blocRect:hover {
+    width: 800px;
+    height: 400px;
+    -webkit-transform: rotate(360deg); /* 180deg */
+    transform: rotate(360deg); /* 180deg */
+}
+
+/* ////////////////////////
+/* open Rect description 
+button.open {
+  transition: 0.4s;
+}
+
+button.open.active, button.open:hover {
+    background-color: #ddd;
+}
+
+div.description {
+  height: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+}
+
+div.description.show {
+  width: 800px;
+  height: 400px;
+  opacity: 1;
+}
+/* //////////////////////// */
+
+/* ////////////////////////
+/* typeWrite description 
+.description p {
+  background:white;
+  opacity:0.7;
+  white-space:nowrap;
+    overflow:hidden;
+    border-right: 3px solid black;
+    -webkit-animation: typing 7s steps(50, end), 
+                        blink-caret 1s step-end 2s;
+    -moz-animation: typing 7s steps(50, end), 
+                        blink-caret 1s step-end 2s;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0; }
+    to { width:400px; }
+}
+
+@-moz-keyframes typing {
+    from { width: 0; }
+    to { width:400px; }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }  */
+
+/*
+ *   ██████╗██╗   ██╗██████╗ ███████╗███████╗  
+ */
+.blocWide {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 1px;
+    width: 400px;
+    height: 198.5px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.cube2 {
+    width: 400px;
+    height: 200px;
+    margin: 2.5px;
+    background-color: #0EBEFF;
+}
+
